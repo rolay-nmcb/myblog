@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>追番列表 | 纳斯卡可`Blog</title><meta name="author" content="纳斯卡可,2843035026@qq.com"><meta name="copyright" content="纳斯卡可"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="生命不息，追番不止！.bangumi-tabs{margin-bottom:15px;margin-top:15px}.bangumi-tab{padding:5px}a.bangumi-tab{text-decoration:none}.bangumi-active{background:#657b83;color:#fff}.bangumi-item{position:relative;cle">
+<meta property="og:type" content="website">
+<meta property="og:title" content="追番列表">
+<meta property="og:url" content="http://example.com/bangumis/index.html">
+<meta property="og:site_name" content="纳斯卡可&#96;Blog">
+<meta property="og:description" content="生命不息，追番不止！.bangumi-tabs{margin-bottom:15px;margin-top:15px}.bangumi-tab{padding:5px}a.bangumi-tab{text-decoration:none}.bangumi-active{background:#657b83;color:#fff}.bangumi-item{position:relative;cle">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:author" content="纳斯卡可">
+<meta property="article:tag" content="博客,纳斯卡可,有趣的博客,blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/bangumis/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '追番列表',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="纳斯卡可`Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/index.html"><i class="fa-fw fas fa-tv"></i><span> 追番</span></a></div></div></div></div><div class="page type-page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">纳斯卡可`Blog</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/index.html"><i class="fa-fw fas fa-tv"></i><span> 追番</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">追番列表</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><blockquote><p>生命不息，追番不止！</p></blockquote><style>.bangumi-tabs{margin-bottom:15px;margin-top:15px}.bangumi-tab{padding:5px}a.bangumi-tab{text-decoration:none}.bangumi-active{background:#657b83;color:#fff}.bangumi-item{position:relative;clear:both;padding:10px 0;border-bottom:1px solid #ddd;min-height:180px}@media screen and (max-width:600px){.bangumi-item{width:100%}}.bangumi-picture{position:absolute;left:0;top:10px;width:110px}.bangumi-picture img{margin:10px 0}.bangumi-info{padding-left:120px;margin-top:10px;min-height:160px}.bangumi-meta{font-size:12px;padding-right:10px;height:45px}.bangumi-summary{font-size:12px;margin-top:10px}.bangumi-summary>p{word-break:break-all;text-overflow:ellipsis;overflow:hidden;height:72px;white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3}.bangumi-summary>p.has-bangumi-progress{height:48px;-webkit-line-clamp:2;line-clamp:2}.bangumi-comments{font-size:12px}.bangumi-pagination{margin-top:15px;text-align:center;margin-bottom:10px}.bangumi-button{padding:5px}.bangumi-button:hover{background:#657b83;color:#fff}.bangumi-hide{display:none}.bangumi-show{display:block}.bangumi-title{font-size:18px;font-weight:700}.bangumi-title a{line-height:1;text-decoration:none}.bangumi-info-items{font-size:12px;color:#2fd8d8;padding-top:10px;line-height:1;float:left;width:100%;height:45px}.bangumi-info-item{display:inline-block;width:13%;border-right:1px solid #2fd8d8;text-align:center;height:34px}.bangumi-info-label{display:block;line-height:12px}.bangumi-info-item em{display:block;padding-top:6px;line-height:17px;font-style:normal;font-weight:700}.bangumi-info-total{padding-top:11px;display:block;line-height:12px;font-weight:700}.bangumi-info-item-score{border-right:1px solid #0000;width:50px}.bangumi-info-label-em{color:transparent;opacity:0;visibility:hidden;line-height:6px!important;padding:0!important}@media (max-width:650px){.bangumi-coin,.bangumi-type{display:none}.bangumi-info-item{width:16%}}@media (max-width:590px){.bangumi-danmaku,.bangumi-wish{display:none}.bangumi-info-item{width:19%}}@media (max-width:520px){.bangumi-doing,.bangumi-play{display:none}.bangumi-info-item{width:24%}}@media (max-width:480px){.bangumi-collect,.bangumi-follow,.bangumi-info-item-follow{display:none}.bangumi-info-item{width:30%}}@media (max-width:400px){.bangumi-area,.bangumi-tag{display:none}.bangumi-info-item{width:45%}}@media (max-width:270px){.bangumi-info-item-score{display:none}.bangumi-info-item{width:100%;border-right:none}}.bangumi-my-comments{border:1px dashed #8f8f8f;padding:3px;border-radius:5px}.bangumi-starstop{background:url(https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.7.9/lib/img/rate_star_2x.png) 100% 100%/10px 19.5px repeat-x;height:10px;width:50px;display:inline-block;float:none}.bangumi-starlight{background:url(https://cdn.jsdelivr.net/npm/hexo-bilibili-bangumi@1.7.9/lib/img/rate_star_2x.png) 0 0/10px 19.5px repeat-x;height:10px;display:block;width:100%}.bangumi-starlight.stars1{width:5px}.bangumi-starlight.stars2{width:10px}.bangumi-starlight.stars3{width:15px}.bangumi-starlight.stars4{width:20px}.bangumi-starlight.stars5{width:25px}.bangumi-starlight.stars6{width:30px}.bangumi-starlight.stars7{width:35px}.bangumi-starlight.stars8{width:40px}.bangumi-starlight.stars9{width:45px}.bangumi-starlight.stars10{width:50px}.bangumi-info .bangumi-progress{width:100%;height:24px;background-color:#f2f2f2;border-radius:5px;overflow:hidden;font-size:16px;text-align:center;position:relative}.bangumi-info .bangumi-progress-text{z-index:100;position:relative;color:#3c4858;line-height:24px}.bangumi-info .bangumi-progress .progress-bar{z-index:50;height:100%;background-color:#007bffad;border-radius:5px;position:absolute;top:0}</style><div class="bangumi-tabs"><a class="bangumi-tab" id="bangumi-tab1" href="javascript:;" rel="external" target="_self" onclick="return false">想看
+(0)</a><a class="bangumi-tab" id="bangumi-tab2" href="javascript:;" rel="external" target="_self" onclick="return false">在看
+(8)</a><a class="bangumi-tab" id="bangumi-tab3" href="javascript:;" rel="external" target="_self" onclick="return false">已看
+(0)</a></div><div><div id="bangumi-item1"><div class="bangumi-pagination"><a class="bangumi-button bangumi-firstpage" href="javascript:;" target="_self" onclick="return false">首页</a><a class="bangumi-button bangumi-previouspage" href="javascript:;" target="_self" onclick="return false">上一页</a><span class="bangumi-pagenum">2 / 3</span><a class="bangumi-button bangumi-nextpage" href="javascript:;" target="_self" onclick="return false">下一页</a><a class="bangumi-button bangumi-lastpage" href="javascript:;" target="_self" onclick="return false">尾页</a></div></div><div id="bangumi-item2"><div class="bangumi-item"><div class="bangumi-picture"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i0.hdslb.com/bfs/bangumi/f34ff3975c39913af936c133ae60a5891babba08.png@220w_280h.webp" referrerpolicy="no-referrer" loading="eager" width="110" style="width:110px;margin:20px auto;"/></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md135652/">JOJO的奇妙冒险 黄金之风</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全39话</span><em class="bangumi-info-label-em">0</em></span><span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span><em>日本</em></span><span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span><em>6.6 亿</em></span><span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">关注</span><em>564.0 万</em></span><span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币</span><em>195.7 万</em></span><span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕</span><em>491.2 万</em></span><span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span><em>9.8</em></span></span></div><div class="bangumi-comments" style="margin-top: 10px;"><p>简介：住在意大利那不勒斯的青年乔鲁诺·乔巴纳，是继承了乔斯达家宿敌·DIO之血脉的儿子。 
+幼年时遭受迫害而自暴自弃的他，由于拯救了一名黑帮男子，而学到了“相信他人”。不忘恩义、带着敬意对待自己的黑帮，让他...</p></div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i0.hdslb.com/bfs/bangumi/6a04c87e990ab74cd8d555ef45a863de0993b161.png@220w_280h.webp" referrerpolicy="no-referrer" loading="eager" width="110" style="width:110px;margin:20px auto;"/></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md140552/">JOJO的奇妙冒险 不灭钻石</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全39话</span><em class="bangumi-info-label-em">0</em></span><span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span><em>日本</em></span><span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span><em>4.1 亿</em></span><span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">关注</span><em>387.7 万</em></span><span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币</span><em>87.0 万</em></span><span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕</span><em>933.7 万</em></span><span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span><em>9.8</em></span></span></div><div class="bangumi-comments" style="margin-top: 10px;"><p>简介：在埃及与宿敌DIO的死斗之后过了11年。1999年，空条承太郎为了与祖父乔瑟夫·乔斯达的私生子东方仗助见面，而来到了日本M县S市杜王町。但，仗助却持有与承太郎相同的特殊能力“替身”。之后，以承太郎的来...</p></div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i0.hdslb.com/bfs/bangumi/image/f6709b76e88f50aa132d1e09e2d8de9663a09b3e.png@220w_280h.webp" referrerpolicy="no-referrer" loading="eager" width="110" style="width:110px;margin:20px auto;"/></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28223483/">JOJO的奇妙冒险 星尘远征军 埃及篇</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全24话</span><em class="bangumi-info-label-em">0</em></span><span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span><em>日本</em></span><span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span><em>2.8 亿</em></span><span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">关注</span><em>492.4 万</em></span><span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币</span><em>69.9 万</em></span><span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕</span><em>567.5 万</em></span><span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span><em>9.9</em></span></span></div><div class="bangumi-comments" style="margin-top: 10px;"><p>简介：在乔斯达家的宿敌·迪奥（DIO）复活的影响下，一位年轻人——空条承太郎，得到了名为“幽波纹（替身）”的能力。为了拯救因迪奥的诅咒而倒下的母亲荷莉，空条承太郎与外祖父·乔瑟夫以及伙伴们，一起为了打倒迪奥...</p></div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i0.hdslb.com/bfs/bangumi/image/9d8d2922b08f3d08d018e6e59e49607cf16d39e6.png@220w_280h.webp" referrerpolicy="no-referrer" loading="eager" width="110" style="width:110px;margin:20px auto;"/></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28223479/">JOJO的奇妙冒险</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全26话</span><em class="bangumi-info-label-em">0</em></span><span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span><em>日本</em></span><span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span><em>3.4 亿</em></span><span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">关注</span><em>662.7 万</em></span><span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币</span><em>81.9 万</em></span><span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕</span><em>593.2 万</em></span><span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span><em>9.8</em></span></span></div><div class="bangumi-comments" style="margin-top: 10px;"><p>简介：在古代墨西哥繁盛一时的太阳的子民阿兹特克，他们流传着一枚奇妙的「石鬼面」。
+那是一枚奇迹的面具，能让人拥有一种力量，能获得永远的生命并成为真正的掌控者。然而从某个时候开始，就从历史中消失了踪影。
+时光...</p></div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i0.hdslb.com/bfs/bangumi/image/14ccd8457a9b7351e7be1d87db2719791108ddc0.png@220w_280h.webp" referrerpolicy="no-referrer" loading="eager" width="110" style="width:110px;margin:20px auto;"/></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28235123/">JOJO的奇妙冒险 石之海</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全38话</span><em class="bangumi-info-label-em">0</em></span><span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span><em>日本</em></span><span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span><em>3.7 亿</em></span><span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">关注</span><em>822.8 万</em></span><span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币</span><em>160.6 万</em></span><span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕</span><em>181.8 万</em></span><span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span><em>9.8</em></span></span></div><div class="bangumi-comments" style="margin-top: 10px;"><p>简介：西历2011年，美国·佛罗里达州。
+在与恋人兜风途中遇到了交通事故的空条徐伦，因被陷害而获刑15年。
+
+收容设施是州立绿海豚街重警备监狱——别名「水族馆」。
+深陷绝望之中的徐伦，在手握父亲所托的吊坠时...</p></div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i0.hdslb.com/bfs/bangumi/image/47c0108259355d6d2c517ed97f6b90fb777f844f.png@220w_280h.webp" referrerpolicy="no-referrer" loading="eager" width="110" style="width:110px;margin:20px auto;"/></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28223481/">JOJO的奇妙冒险 星尘远征军</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全24话</span><em class="bangumi-info-label-em">0</em></span><span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span><em>日本</em></span><span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span><em>3.2 亿</em></span><span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">关注</span><em>532.2 万</em></span><span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币</span><em>72.5 万</em></span><span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕</span><em>556.2 万</em></span><span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span><em>9.8</em></span></span></div><div class="bangumi-comments" style="margin-top: 10px;"><p>简介：时为1987年，乔瑟夫·乔斯达与“柱之男”们之间的死战后过了50年……乔瑟夫为了为了帮助“被恶灵附身了”的外孙子·空条承太郎而来到了日本。原来那并不是恶灵而是幽波纹（替身）。替身突然出现的原因在于，从...</p></div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i0.hdslb.com/bfs/bangumi/image/de1dc90a7fb5456a9db09b0e21b1d04e3a1606cb.png@220w_280h.webp" referrerpolicy="no-referrer" loading="eager" width="110" style="width:110px;margin:20px auto;"/></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28231773/">动物狂想曲 / BEASTARS 第二季</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全12话</span><em class="bangumi-info-label-em">0</em></span><span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span><em>日本</em></span><span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span><em>5245.0 万</em></span><span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">关注</span><em>371.1 万</em></span><span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币</span><em>38.3 万</em></span><span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕</span><em>52.1 万</em></span><span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span><em>9.1</em></span></span></div><div class="bangumi-comments" style="margin-top: 10px;"><p>简介：「我要变得更强。因为我不想输给这个社会和本能。」
+雷格西接受了自己食肉动物的身份，并朝着与春的恋情迈进了一步。然而，雷格西本以为自己回到了平静的校园生活，却不知新的危机正在逼近。那就是悬而未决的「食杀...</p></div></div></div><div class="bangumi-item"><div class="bangumi-picture"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i0.hdslb.com/bfs/bangumi/9585f07662bfc460d157fa431543aa98f6f3a9be.png@220w_280h.webp" referrerpolicy="no-referrer" loading="eager" width="110" style="width:110px;margin:20px auto;"/></div><div class="bangumi-info"><div class="bangumi-title"><a target="_blank" href="https://www.bilibili.com/bangumi/media/md28222618/">动物狂想曲 / BEASTARS</a></div><div class="bangumi-meta"><span class="bangumi-info-items"><span class="bangumi-info-item"><span class="bangumi-info-total">全12话</span><em class="bangumi-info-label-em">0</em></span><span class="bangumi-info-item bangumi-area"><span class="bangumi-info-label">番剧</span><em>日本</em></span><span class="bangumi-info-item bangumi-play"><span class="bangumi-info-label">总播放</span><em>9782.9 万</em></span><span class="bangumi-info-item bangumi-follow"><span class="bangumi-info-label">关注</span><em>366.9 万</em></span><span class="bangumi-info-item bangumi-coin"><span class="bangumi-info-label">硬币</span><em>48.8 万</em></span><span class="bangumi-info-item bangumi-danmaku"><span class="bangumi-info-label">弹幕</span><em>118.7 万</em></span><span class="bangumi-info-item bangumi-info-item-score"><span class="bangumi-info-label">评分</span><em>9.7</em></span></span></div><div class="bangumi-comments" style="margin-top: 10px;"><p>简介：肉食兽和草食兽共存的世界。在食肉被视为重罪的情况下 ，全寄宿制的名门高中·却里顿学园发生了学生被吞噬的“食杀事件”。
+在充斥着不安的校园里，戏剧部的怪人·灰狼雷格西过着与其“庞大身躯”和“锐利尖牙”相...</p></div></div></div><div class="bangumi-pagination"><a class="bangumi-button bangumi-firstpage" href="javascript:;" target="_self" onclick="return false">首页</a><a class="bangumi-button bangumi-previouspage" href="javascript:;" target="_self" onclick="return false">上一页</a><span class="bangumi-pagenum">2 / 3</span><a class="bangumi-button bangumi-nextpage" href="javascript:;" target="_self" onclick="return false">下一页</a><a class="bangumi-button bangumi-lastpage" href="javascript:;" target="_self" onclick="return false">尾页</a></div></div><div id="bangumi-item3"><div class="bangumi-pagination"><a class="bangumi-button bangumi-firstpage" href="javascript:;" target="_self" onclick="return false">首页</a><a class="bangumi-button bangumi-previouspage" href="javascript:;" target="_self" onclick="return false">上一页</a><span class="bangumi-pagenum">2 / 3</span><a class="bangumi-button bangumi-nextpage" href="javascript:;" target="_self" onclick="return false">下一页</a><a class="bangumi-button bangumi-lastpage" href="javascript:;" target="_self" onclick="return false">尾页</a></div></div></div><script>window.hexoBilibiliBangumiOptions = {
+    bangumiLazyload: false,
+    show: 1
+}
+if (false) {
+    hexoBilibiliBangumiOptions.pugTemplate = ``;
+    hexoBilibiliBangumiOptions.pugOptions = {
+        loading: '',
+        metaColor: '',
+        type: 'bangumi',
+        color: '',
+        lazyload: false,
+        showMyComment: false,
+        lazyloadAttrName: '',
+        srcValue: '__image__'
+    }
+    hexoBilibiliBangumiOptions.pagenumsPre = [0,8,0];
+    hexoBilibiliBangumiOptions.pug = require('pug');
+}</script><script>"use strict";/*
+ * @Author       : HCLonely
+ * @Date         : 2024-09-11 15:40:57
+ * @LastEditTime : 2025-07-09 20:36:01
+ * @LastEditors  : HCLonely
+ * @FilePath     : /hexo-bilibili-bangumi/src/lib/templates/index.js
+ * @Description  : 前端页面交互脚本，实现标签页切换和分页加载功能。
+ *                 包含自定义DOM操作方法、标签页点击事件处理，以及
+ *                 通过AJAX异步加载更多数据的分页功能。
+ */(function(){function a(){this.classList.add("bangumi-active");let a=this.siblings();for(let b=0;b<a.length;b++)a[b].classList.remove("bangumi-active");// 显示对应板块
+const b=this.id.replace("tab","item"),c=document.getElementById(b);c.classList.remove("bangumi-hide"),c.classList.add("bangumi-show"),a=document.getElementById(b).siblings();for(let b=0;b<a.length;b++)a[b].classList.remove("bangumi-show"),a[b].classList.add("bangumi-hide")}Element.prototype.siblings=function(){const a=[],b=this.parentNode.children;for(let c=0;c<b.length;c++)b[c]!==this&&a.push(b[c]);return a};const b=document.getElementsByClassName("bangumi-tab");for(let c=0;c<b.length;c++)b[c].onclick=a,b[c].onclick.apply(b[c]);"undefined"!=typeof hexoBilibiliBangumiOptions.pagenumsPre&&axios.get(new URL("../bangumis.json",window.location.href)).then(a=>{if(a.data){const b={wantWatch:a.data.wantWatch.slice(10).map(a=>hexoBilibiliBangumiOptions.pug.render(hexoBilibiliBangumiOptions.pugTemplate,{item:a,...hexoBilibiliBangumiOptions.pugOptions})).join("\n"),watching:a.data.watching.slice(10).map(a=>hexoBilibiliBangumiOptions.pug.render(hexoBilibiliBangumiOptions.pugTemplate,{item:a,...hexoBilibiliBangumiOptions.pugOptions})).join("\n"),watched:a.data.watched.slice(10).map(a=>hexoBilibiliBangumiOptions.pug.render(hexoBilibiliBangumiOptions.pugTemplate,{item:a,...hexoBilibiliBangumiOptions.pugOptions})).join("\n")};document.querySelectorAll("#bangumi-item1>.bangumi-pagination")[0].insertAdjacentHTML("beforeBegin",b.wantWatch),document.querySelectorAll("#bangumi-item2>.bangumi-pagination")[0].insertAdjacentHTML("beforeBegin",b.watching),document.querySelectorAll("#bangumi-item3>.bangumi-pagination")[0].insertAdjacentHTML("beforeBegin",b.watched)}}),document.getElementsByClassName("bangumi-tab")[hexoBilibiliBangumiOptions.show].click()})();"use strict";/*
+ * @Author       : HCLonely
+ * @Date         : 2024-09-11 15:40:57
+ * @LastEditTime : 2025-07-09 20:36:29
+ * @LastEditors  : HCLonely
+ * @FilePath     : /hexo-bilibili-bangumi/src/lib/templates/pagination.js
+ * @Description  : 分页功能实现脚本，提供首页、上一页、下一页、末页等导航功能。
+ *                 实现了页码显示、页面内容切换、图片懒加载等功能，每页显示10条数据，
+ *                 支持自定义预加载数据量配置。
+ */(function(){var a=Math.ceil;function b(b,c){return`${b+1} / ${a(0==c.length/10?1:a(c.length/10))}`}function c(){const a=this.parentNode.siblings();g(a,0),this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText=b(0,a)}function d(){const a=this.parentNode.siblings();let c=this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText;c=c.substr(0,c.indexOf("/")-1),c=parseInt(c,10)-1,0<c&&c--,g(a,c),this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText=b(c,a)}function e(){const c=this.parentNode.siblings();let d=this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText;d=d.substr(0,d.indexOf("/")-1),d=parseInt(d,10)-1,d<a(c.length/10)-1&&d++,g(c,d),this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText=b(d,c)}function f(){const c=this.parentNode.siblings();g(c,a(c.length/10)-1),this.parentNode.getElementsByClassName("bangumi-pagenum")[0].innerText=b(-1==a(c.length/10)-1?0:a(c.length/10)-1,c)}function g(a,b){for(let c=0;c<a.length;c++)if(Math.floor(c/10)===b){a[c].classList.remove("bangumi-hide");const[b]=a[c].getElementsByTagName("img");hexoBilibiliBangumiOptions.bangumiLazyload&&(b.src=b.getAttribute("data-src"))}else a[c].classList.add("bangumi-hide")}const h=document.getElementsByClassName("bangumi-firstpage"),j=document.getElementsByClassName("bangumi-previouspage"),k=document.getElementsByClassName("bangumi-nextpage"),l=document.getElementsByClassName("bangumi-lastpage"),m=document.getElementsByClassName("bangumi-pagenum");for(let b=0;b<h.length;b++){h[b].onclick=c,j[b].onclick=d,k[b].onclick=e,l[b].onclick=f;// set page num
+const g="undefined"==typeof hexoBilibiliBangumiOptions.pagenumsPre?m[b].parentNode.siblings().length:hexoBilibiliBangumiOptions.pagenumsPre[b]??m[b].parentNode.siblings().length;h[b].click(),m[b].innerText=`1 / ${0===a(g/10)?1:a(g/10)}`}})();</script></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">纳斯卡可</div><div class="author-info-description">纳斯卡可的博客</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/3eeb.html" title="Hello World">Hello World</a><time datetime="2025-09-12T09:21:58.698Z" title="发表于 2025-09-12 17:21:58">2025-09-12</time></div></div></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/09/">
+            <span class="card-archive-list-date">
+              九月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-09-13T12:30:25.483Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By 纳斯卡可</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="2827597264" data-server="netease" data-type="playlist" data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" ></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script data-pjax src="https://unpkg.com/oh-my-live2d"></script><script>const oml2d = OML2D.loadOml2d({dockedPosition:"right",mobileDisplay:true,models:[{"path":"/live2d_models/LSS/LSS.model3.json","mobilePosition":[10,0],"mobileScale":0.1,"mobileStageStyle":{"width":180,"height":166},"motionPreloadStrategy":"IDLE","position":[15,0],"scale":0.25,"stageStyle":{"width":250,"height":250}}],parentElement:document.body,primaryColor:"var(--btn-bg)",sayHello:false,tips:{style: {"width":180,"height":100,"left":"calc(50% - 20px)","top":"-100px"},mobileStyle: {"width":180,"height":80,"left":"calc(50% - 30px)","top":"-50px"},idleTips:{interval:15000,message:["你好呀~","欢迎来到我的小站~"]}}});</script><!-- hexo injector body_end end --></body></html>
