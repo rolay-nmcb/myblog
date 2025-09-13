@@ -3,11 +3,11 @@
   <title>纳斯卡可`Blog</title>
   <icon>https://www.gravatar.com/avatar/feb67af737a34cba9363ed2d415c9ae9</icon>
   <subtitle>生活明朗 万物可爱</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://nmcb666.vip/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://nmcb666.vip/"/>
   <updated>2025-09-13T07:25:35.337Z</updated>
-  <id>http://example.com/</id>
+  <id>https://nmcb666.vip/</id>
   
   <author>
     <name>纳斯卡可</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/posts/3eeb.html"/>
-    <id>http://example.com/posts/3eeb.html</id>
+    <link href="https://nmcb666.vip/posts/3eeb.html"/>
+    <id>https://nmcb666.vip/posts/3eeb.html</id>
     <published>2025-09-12T09:21:58.698Z</published>
     <updated>2025-09-13T07:25:35.337Z</updated>
     
