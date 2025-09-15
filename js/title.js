@@ -1,0 +1,1 @@
+var titleTime,OriginTitile=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="w(ﾟДﾟ)w 再不来我都要睡着了 ",clearTimeout(titleTime)):(document.title="♪(^∇^*)等你半天了 "+OriginTitile,titleTime=setTimeout(function(){document.title=OriginTitile},2e3))});
