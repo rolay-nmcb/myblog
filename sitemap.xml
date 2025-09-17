@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://nmcb666.vip/tags/index.html</loc>
+    
+    <lastmod>2025-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://nmcb666.vip/manifest.json</loc>
     
     <lastmod>2025-09-17</lastmod>
@@ -12,42 +21,6 @@
   
   <url>
     <loc>https://nmcb666.vip/links/index.html</loc>
-    
-    <lastmod>2025-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://nmcb666.vip/tags/index.html</loc>
-    
-    <lastmod>2025-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://nmcb666.vip/posts/3eeb.html</loc>
-    
-    <lastmod>2025-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://nmcb666.vip/posts/6acc4ad2.html</loc>
-    
-    <lastmod>2025-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://nmcb666.vip/posts/3f6c5c0b.html</loc>
     
     <lastmod>2025-09-17</lastmod>
     
@@ -84,6 +57,33 @@
   
   <url>
     <loc>https://nmcb666.vip/about/index.html</loc>
+    
+    <lastmod>2025-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://nmcb666.vip/posts/3eeb.html</loc>
+    
+    <lastmod>2025-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://nmcb666.vip/posts/6acc4ad2.html</loc>
+    
+    <lastmod>2025-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://nmcb666.vip/posts/3f6c5c0b.html</loc>
     
     <lastmod>2025-09-17</lastmod>
     
